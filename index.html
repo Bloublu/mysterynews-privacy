@@ -6,57 +6,87 @@
   <link rel="icon" href="icon.png" type="image/png">
   <title>Politique de confidentialité - Mystery News</title>
 
-    <style>
-     body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; max-width: 800px; }
+  <style>
+    /* ------------------------------
+       GLOBAL
+    ------------------------------ */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
 
-    /* Fond flou */
+    /* ------------------------------
+       BACKGROUND flou + sombre
+    ------------------------------ */
     .background {
       position: fixed;
-      bottom: 0;
-      right: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('background.jpg') center/cover no-repeat;
-      filter: blur(4px) brightness(0.6);
+      background: url('background.jpg') center/cover no-repeat;
+      filter: blur(6px) brightness(0.6);
       z-index: -1;
     }
 
-    .p {
+    /* ------------------------------
+       CONTENU
+    ------------------------------ */
+    .content {
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      color: white;
-      line-height: 1.6;
+      backdrop-filter: blur(2px);
     }
 
     h1, h2 {
-      color: white;
       margin-top: 20px;
+      color: #fff;
     }
-    title{
-      color: white;
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* Adapté mobile */
+    @media(max-width: 600px) {
+      .content {
+        margin: 20px;
+        padding: 15px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Politique de confidentialité - Mystery News</h1>
 
-  <p>Dernière mise à jour : octobre 2025</p>
+  <!-- BACKGROUND -->
+  <div class="background"></div>
 
-  <p>Votre confidentialité est importante pour nous. L’application <strong>Mystery News</strong> ne collecte, ne stocke et ne partage aucune donnée personnelle identifiable.</p>
+  <!-- CONTENU -->
+  <div class="content">
+    <h1>Politique de confidentialité — Mystery News</h1>
 
-  <h2>Données collectées</h2>
-  <p>Actuellement, Mystery News ne collecte aucune donnée personnelle. Si des fonctionnalités futures nécessitent la collecte de données (par exemple : création de compte, publicité personnalisée ou statistiques d’utilisation), les utilisateurs en seront informés et devront donner leur consentement avant toute collecte.</p>
+    <p><em>Dernière mise à jour : octobre 2025</em></p>
 
-  <h2>Publicités et services tiers</h2>
-  <p>Si des publicités ou services tiers (comme Google AdMob) sont intégrés, ils pourront utiliser un identifiant publicitaire anonyme fourni par Google Play. Aucune donnée personnelle n’est partagée par l’application sans consentement explicite.</p>
+    <p>Votre confidentialité est importante pour nous. L’application <strong>Mystery News</strong> ne collecte, ne stocke et ne partage aucune donnée personnelle identifiable.</p>
 
-  <h2>Sécurité</h2>
-  <p>Toutes les communications de l’application utilisent des connexions sécurisées (HTTPS) pour protéger les données et le contenu échangé.</p>
+    <h2>Données collectées</h2>
+    <p>Actuellement, Mystery News ne collecte aucune donnée personnelle. Si des fonctionnalités futures nécessitent la collecte de données (par exemple : création de compte, publicité personnalisée ou statistiques d’utilisation), les utilisateurs en seront informés et devront donner leur consentement avant toute collecte.</p>
 
-  <h2>Contact</h2>
-  <p>Pour toute question concernant cette politique de confidentialité, vous pouvez contacter le développeur à l’adresse suivante : <strong>contact@bloublu.com</strong>.</p>
+    <h2>Publicités et services tiers</h2>
+    <p>Si des publicités ou services tiers (comme Google AdMob) sont intégrés, ils pourront utiliser un identifiant publicitaire anonyme fourni par Google Play. Aucune donnée personnelle n’est partagée par l’application sans consentement explicite.</p>
 
-  <p>— L’équipe Mystery News</p>
+    <h2>Sécurité</h2>
+    <p>Toutes les communications de l’application utilisent des connexions sécurisées (HTTPS) pour protéger les données et le contenu échangé.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité, vous pouvez contacter le développeur à l’adresse suivante : <strong>contact@bloublu.com</strong>.</p>
+
+    <p>— L’équipe Mystery News</p>
+  </div>
+
 </body>
 </html>
